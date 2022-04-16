@@ -5,7 +5,7 @@ module.exports.inserirUsuarios = function(req, res){
     usuarios.push(req.body);
     res.status(200).send(req.body);
 };
-/*module.exports.obterUsuarios = function(req, res){
+module.exports.obterUsuarios = function(req, res){
        var id = req.params.id;
        var usuario = usuario.find(usuario => (usuario._id==id));
        if(usuario){
@@ -13,7 +13,7 @@ module.exports.inserirUsuarios = function(req, res){
        }else{
            res.status(404).send('Usuario não encontrado');
        }
-   };*/
+   };
 
    module.exports.receberUsuario = function(req, res){
     var id = req.params.id;
